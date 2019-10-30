@@ -16,6 +16,7 @@ if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
 
 var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
 console.log(userAnswerHobbies);
+
 if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
   console.log('Correct!');
   alert('Correct!');
