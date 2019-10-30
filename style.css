@@ -1,5 +1,5 @@
 body {
-  background-color: lavender;
+  background-color: rgb(205, 205, 241);
 }
 header {
   text-align: center;
@@ -18,15 +18,18 @@ h2 {
 
 h3 {
   font-size: 32px;
-  padding: 20px;
+  padding-bottom: 20px;
   text-decoration: underline;
+  text-decoration-color: rgb(117, 119, 226);
 }
 
 article {
+  background-color: rgba(245, 245, 245, 0.199);
   text-align: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 8%;
 }
 
 img {
@@ -39,4 +42,5 @@ img {
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
 }
