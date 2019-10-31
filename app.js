@@ -1,9 +1,12 @@
 'use strict';
 
+// Asking user's name
 var userName = prompt('What is your name?');
 alert('Hi, ' + userName + ', welcome to my awesome website. Impressed?');
 alert('Here is a little quiz to help you get to know me. Please answer yes/no or y/n.');
 
+
+// First question
 var userAnswerAge = prompt('Am I 27 years old?').toLowerCase();
 console.log(userAnswerAge);
 if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
@@ -14,6 +17,8 @@ if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
   alert('Incorrect! I am 27 years old.');
 }
 
+
+//  Second question
 var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
 console.log(userAnswerHobbies);
 
@@ -25,6 +30,8 @@ if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
   alert('Incorrect! Origami is not one of my hobbies.');
 }
 
+
+// Third question
 var userAnswerCollege = prompt('Did I attend college at the University of Washington?').toLowerCase();
 console.log(userAnswerCollege);
 if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
@@ -35,6 +42,8 @@ if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
   alert('Incorrect! I did attend the UW.');
 }
 
+
+// Fourth question
 var userAnswerJob = prompt('Am I currently working as a supply chain manager at Amazon?').toLowerCase();
 console.log(userAnswerJob);
 if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
@@ -45,6 +54,8 @@ if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
   alert('Correct! I am a massage therapist.');
 }
 
+
+// Fifth question
 var userAnswerFuture = prompt('Am I currently attending Code Fellows to learn to be a JavaScript developer in the future?').toLowerCase();
 console.log(userAnswerFuture);
 if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
@@ -55,4 +66,6 @@ if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
   alert('Incorrect! It is true!');
 }
 
+
+// Farewell message
 alert('Thank you for taking the time to learn a little bit about me, ' + userName + '! Take care.');
