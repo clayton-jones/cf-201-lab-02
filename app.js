@@ -69,7 +69,7 @@ if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
 
 // creates random number between 1 and 100 for user to guess
 var myNumber = Math.floor((Math.random() * 100) + 1);
-console.log(myNumber);
+console.log(myNumber); // used to quickly test correct answers
 
 // asks user to guess number (first guess)
 var userGuess = parseInt(prompt('I am thinking of a number between 1 and 100. What is it? You have four guesses.'));
@@ -82,7 +82,7 @@ for (var i = 0; i < 4; i++) {
     alert('Good try! The number was ' + myNumber);
   } else if (userGuess === myNumber) {
     alert('You got it! Amazing!');
-    i = 5;
+    break;
   } else if (userGuess < myNumber) {
     alert('Too low!');
     userGuess = parseInt(prompt('Guess higher! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
@@ -91,6 +91,36 @@ for (var i = 0; i < 4; i++) {
     userGuess = parseInt(prompt('Guess lower! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
   }
 }
+
+var myFavVideogames = ['skyrim', 'borderlands 3', 'teamfight tactics', 'the witcher 3'];
+var userVideogameCorrect = false;
+var numOfGuesses = 1;
+var userVideogameGuess = prompt('What is one of my favorite video games? You have 6 guesses.').toLowerCase();
+// console.log('User guess: ', userVideogameGuess);
+
+// testing if user's guess is equal to any of the games in the array
+while (userVideogameCorrect === false && numOfGuesses < 6) {
+  for (var j = 0; j < myFavVideogames.length; j++) {
+    if (userVideogameGuess === myFavVideogames[j]) {
+      alert('You are right!');
+      userVideogameCorrect = true;
+      break;
+    }
+  }
+  if (userVideogameCorrect === true) {
+    break;
+  } else {
+    userVideogameGuess = prompt('Guess again! ' + (6 - numOfGuesses) + ' remaining.').toLowerCase;
+    numOfGuesses++;
+  }
+}
+
+// else {
+//   userVideogameGuess = prompt('Guess again!' + (6 - numOfGuesses) + ' remaining.').toLowerCase;
+//   numOfGuesses++;
+// }
+
+alert('These were all of the possible answers: ' + myFavVideogames);
 
 
 // Farewell message
