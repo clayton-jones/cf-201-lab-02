@@ -45,12 +45,16 @@ p {
 
 ul, ol {
   text-align: left;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-bottom: 10px;
-  width: 50%;
+  width: 65%;
   margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+li {
+  padding-bottom: 8px;
 }
 
 #artists {
