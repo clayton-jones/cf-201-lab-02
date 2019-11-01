@@ -9,7 +9,7 @@ var score = 0;
 
 // First question
 var userAnswerAge = prompt('Am I 27 years old?').toLowerCase();
-console.log(userAnswerAge);
+// console.log(userAnswerAge);
 if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
   // console.log('Correct!');
   alert('Correct!');
@@ -22,7 +22,7 @@ if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
 
 //  Second question
 var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
-console.log(userAnswerHobbies);
+// console.log(userAnswerHobbies);
 
 if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
   // console.log('Correct!');
@@ -36,7 +36,7 @@ if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
 
 // Third question
 var userAnswerCollege = prompt('Did I attend college at the University of Washington?').toLowerCase();
-console.log(userAnswerCollege);
+// console.log(userAnswerCollege);
 if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
   // console.log('Correct!');
   alert('Correct!');
@@ -49,7 +49,7 @@ if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
 
 // Fourth question
 var userAnswerJob = prompt('Am I currently working as a supply chain manager at Amazon?').toLowerCase();
-console.log(userAnswerJob);
+// console.log(userAnswerJob);
 if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
   // console.log('Incorrect! I am currently working as a massage therapist.');
   alert('Incorrect! I am currently working as a massage therapist.');
@@ -62,7 +62,7 @@ if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
 
 // Fifth question
 var userAnswerFuture = prompt('Am I currently attending Code Fellows to learn to be a JavaScript developer in the future?').toLowerCase();
-console.log(userAnswerFuture);
+// console.log(userAnswerFuture);
 if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
   // console.log('Correct!');
   alert('Correct!');
@@ -74,15 +74,15 @@ if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
 
 // creates random number between 1 and 100 for user to guess
 var myNumber = Math.floor((Math.random() * 100) + 1);
-console.log(myNumber); // used to quickly test correct answers
+// console.log(myNumber); // used to quickly test correct answers
 
 // asks user to guess number (first guess)
 var userGuess = parseInt(prompt('I am thinking of a number between 1 and 100. What is it? You have four guesses.'));
-
+// console.log('userGuess number 1 to 100: ', userGuess);
 
 // tells user if they got it right, and if not, to keep guessing
 for (var i = 0; i < 4; i++) {
-  console.log(userGuess);
+  // console.log(userGuess);
   if (userGuess === myNumber) {
     alert('You got it! Amazing!');
     score++;
@@ -106,9 +106,11 @@ var userVideogameGuess = prompt('What is one of my favorite video games? You hav
 
 // testing if user's guess is equal to any of the games in the array
 while (userVideogameCorrect === false && numOfGuesses < 6) {
+  // console.log(userVideogameGuess);
   numOfGuesses++;
   for (var j = 0; j < myFavVideogames.length; j++) {
     if (userVideogameGuess === myFavVideogames[j]) {
+      // console.log('games inside array: ', myFavVideogames[j]);
       alert('You are right!');
       score++;
       userVideogameCorrect = true;
