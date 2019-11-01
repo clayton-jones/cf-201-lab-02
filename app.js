@@ -5,6 +5,7 @@ var userName = prompt('What is your name?');
 alert('Hi, ' + userName + ', welcome to my awesome website. Impressed?');
 alert('Here is a little quiz to help you get to know me. Please answer yes/no or y/n.');
 
+var score = 0;
 
 // First question
 var userAnswerAge = prompt('Am I 27 years old?').toLowerCase();
@@ -68,4 +69,4 @@ if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
 
 
 // Farewell message
-alert('Thank you for taking the time to learn a little bit about me, ' + userName + '! Take care.');
+alert('Thank you for taking the time to learn a little bit about me, ' + userName + '! Your final score is ' + score + 'out of 7.');
