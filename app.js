@@ -60,17 +60,19 @@ thirdQuestion();
 
 // Fourth question
 
-var userAnswerJob = prompt('Am I currently working as a supply chain manager at Amazon?').toLowerCase();
-// console.log(userAnswerJob);
-if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
-  // console.log('Incorrect! I am currently working as a massage therapist.');
-  alert('Incorrect! I am currently working as a massage therapist.');
-} else {
-  // console.log('Correct! I am a massage therapist.');
-  alert('Correct! I am a massage therapist.');
-  score++;
+function fourthQuestion() {
+  var userAnswerJob = prompt('Am I currently working as a supply chain manager at Amazon?').toLowerCase();
+  // console.log(userAnswerJob);
+  if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
+    // console.log('Incorrect! I am currently working as a massage therapist.');
+    alert('Incorrect! I am currently working as a massage therapist.');
+  } else {
+    // console.log('Correct! I am a massage therapist.');
+    alert('Correct! I am a massage therapist.');
+    score++;
+  }
 }
-
+fourthQuestion();
 
 // Fifth question
 var userAnswerFuture = prompt('Am I currently attending Code Fellows to learn to be a JavaScript developer in the future?').toLowerCase();
