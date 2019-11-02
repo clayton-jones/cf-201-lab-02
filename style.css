@@ -39,6 +39,11 @@ img {
   margin: auto;
   max-width: 125px;
   padding-bottom: 10px;
+  transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.5);
 }
 
 p {
