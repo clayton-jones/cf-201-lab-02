@@ -122,31 +122,35 @@ function sixthQuestion() {
 sixthQuestion();
 
 //Seventh Question
-var myFavVideogames = ['skyrim', 'borderlands 3', 'teamfight tactics', 'the witcher 3'];
-var userVideogameCorrect = false;
-var numOfGuesses = 0;
-var userVideogameGuess = prompt('What is one of my favorite video games? You have 6 guesses.').toLowerCase();
-// console.log('User guess: ', userVideogameGuess);
 
-// testing if user's guess is equal to any of the games in the array
-while (userVideogameCorrect === false && numOfGuesses < 6) {
-  // console.log(userVideogameGuess);
-  numOfGuesses++;
-  for (var j = 0; j < myFavVideogames.length; j++) {
-    if (userVideogameGuess === myFavVideogames[j]) {
-      // console.log('games inside array: ', myFavVideogames[j]);
-      alert('You are right!');
-      score++;
-      userVideogameCorrect = true;
+function seventhQuestion() {
+  var myFavVideogames = ['skyrim', 'borderlands 3', 'teamfight tactics', 'the witcher 3'];
+  var userVideogameCorrect = false;
+  var numOfGuesses = 0;
+  var userVideogameGuess = prompt('What is one of my favorite video games? You have 6 guesses.').toLowerCase();
+  // console.log('User guess: ', userVideogameGuess);
+  
+  // testing if user's guess is equal to any of the games in the array
+  while (userVideogameCorrect === false && numOfGuesses < 6) {
+    // console.log(userVideogameGuess);
+    numOfGuesses++;
+    for (var j = 0; j < myFavVideogames.length; j++) {
+      if (userVideogameGuess === myFavVideogames[j]) {
+        // console.log('games inside array: ', myFavVideogames[j]);
+        alert('You are right!');
+        score++;
+        userVideogameCorrect = true;
+        break;
+      }
+    }
+    if (userVideogameCorrect === true) {
       break;
+    } else {
+      userVideogameGuess = prompt('Guess again! ' + (6 - numOfGuesses) + ' remaining.').toLowerCase();
     }
   }
-  if (userVideogameCorrect === true) {
-    break;
-  } else {
-    userVideogameGuess = prompt('Guess again! ' + (6 - numOfGuesses) + ' remaining.').toLowerCase();
-  }
 }
+seventhQuestion();
 
 // else {
 //   userVideogameGuess = prompt('Guess again!' + (6 - numOfGuesses) + ' remaining.').toLowerCase;
