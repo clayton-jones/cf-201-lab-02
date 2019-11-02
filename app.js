@@ -90,32 +90,38 @@ function fifthQuestion() {
 }
 fifthQuestion();
 
-// creates random number between 1 and 100 for user to guess
-var myNumber = Math.floor((Math.random() * 100) + 1);
-// console.log(myNumber); // used to quickly test correct answers
+// Sixth question
 
-// asks user to guess number (first guess)
-var userGuess = parseInt(prompt('I am thinking of a number between 1 and 100. What is it? You have four guesses.'));
-// console.log('userGuess number 1 to 100: ', userGuess);
-
-// tells user if they got it right, and if not, to keep guessing
-for (var i = 0; i < 4; i++) {
-  // console.log(userGuess);
-  if (userGuess === myNumber) {
-    alert('You got it! Amazing!');
-    score++;
-    break;
-  } else if (i === 3) {
-    alert('Good try! The number was ' + myNumber);
-  } else if (userGuess < myNumber) {
-    alert('Too low!');
-    userGuess = parseInt(prompt('Guess higher! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
-  } else {
-    alert('Too high!');
-    userGuess = parseInt(prompt('Guess lower! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
+function sixthQuestion() {
+  // creates random number between 1 and 100 for user to guess
+  var myNumber = Math.floor((Math.random() * 100) + 1);
+  // console.log(myNumber); // used to quickly test correct answers
+  
+  // asks user to guess number (first guess)
+  var userGuess = parseInt(prompt('I am thinking of a number between 1 and 100. What is it? You have four guesses.'));
+  // console.log('userGuess number 1 to 100: ', userGuess);
+  
+  // tells user if they got it right, and if not, to keep guessing
+  for (var i = 0; i < 4; i++) {
+    // console.log(userGuess);
+    if (userGuess === myNumber) {
+      alert('You got it! Amazing!');
+      score++;
+      break;
+    } else if (i === 3) {
+      alert('Good try! The number was ' + myNumber);
+    } else if (userGuess < myNumber) {
+      alert('Too low!');
+      userGuess = parseInt(prompt('Guess higher! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
+    } else {
+      alert('Too high!');
+      userGuess = parseInt(prompt('Guess lower! Your last guess was ' + userGuess + '. ' + (3 - i) + ' guesses left.'));
+    }
   }
 }
+sixthQuestion();
 
+//Seventh Question
 var myFavVideogames = ['skyrim', 'borderlands 3', 'teamfight tactics', 'the witcher 3'];
 var userVideogameCorrect = false;
 var numOfGuesses = 0;
