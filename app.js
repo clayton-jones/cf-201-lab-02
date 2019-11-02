@@ -43,19 +43,23 @@ secondQuestion();
 
 
 // Third question
-var userAnswerCollege = prompt('Did I attend college at the University of Washington?').toLowerCase();
-// console.log(userAnswerCollege);
-if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
-  // console.log('Correct!');
-  alert('Correct!');
-  score++;
-} else {
-  // console.log('Incorrect. I did attend the UW.');
-  alert('Incorrect! I did attend the UW.');
-}
 
+function thirdQuestion() {
+  var userAnswerCollege = prompt('Did I attend college at the University of Washington?').toLowerCase();
+  // console.log(userAnswerCollege);
+  if (userAnswerCollege === 'yes' || userAnswerCollege === 'y') {
+    // console.log('Correct!');
+    alert('Correct!');
+    score++;
+  } else {
+    // console.log('Incorrect. I did attend the UW.');
+    alert('Incorrect! I did attend the UW.');
+  }
+}
+thirdQuestion();
 
 // Fourth question
+
 var userAnswerJob = prompt('Am I currently working as a supply chain manager at Amazon?').toLowerCase();
 // console.log(userAnswerJob);
 if (userAnswerJob === 'yes' || userAnswerJob === 'y') {
