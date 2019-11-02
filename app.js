@@ -8,30 +8,38 @@ alert('Here is a little quiz to help you get to know me. Please answer yes/no or
 var score = 0;
 
 // First question
-var userAnswerAge = prompt('Am I 27 years old?').toLowerCase();
-// console.log(userAnswerAge);
-if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
-  // console.log('Correct!');
-  alert('Correct!');
-  score++;
-} else {
-  // console.log('Incorrect! I am 27 years old.');
-  alert('Incorrect! I am 27 years old.');
+
+function firstQuestion() {
+  var userAnswerAge = prompt('Am I 27 years old?').toLowerCase();
+  // console.log(userAnswerAge);
+  if (userAnswerAge === 'yes' || userAnswerAge === 'y') {
+    // console.log('Correct!');
+    alert('Correct!');
+    score++;
+  } else {
+    // console.log('Incorrect! I am 27 years old.');
+    alert('Incorrect! I am 27 years old.');
+  }
 }
+firstQuestion();
 
 
 //  Second question
-var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
-// console.log(userAnswerHobbies);
 
-if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
-  // console.log('Correct!');
-  alert('Correct!');
-  score++;
-} else {
-  // console.log('Incorrect! Origami is not one of my hobbies.');
-  alert('Incorrect! Origami is not one of my hobbies.');
+function secondQuestion() {
+  var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
+  // console.log(userAnswerHobbies);
+  
+  if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
+    // console.log('Correct!');
+    alert('Correct!');
+    score++;
+  } else {
+    // console.log('Incorrect! Origami is not one of my hobbies.');
+    alert('Incorrect! Origami is not one of my hobbies.');
+  }
 }
+secondQuestion();
 
 
 // Third question
