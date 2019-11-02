@@ -27,6 +27,8 @@ h3 {
 article {
   background-color: rgba(245, 245, 245, 0.199);
   width: 50%;
+  height: 300px;
+  overflow: scroll;
   margin: auto;
   border-radius: 8%;
 }
@@ -36,6 +38,7 @@ img {
   display: block;
   margin: auto;
   max-width: 125px;
+  padding-bottom: 10px;
 }
 
 p {
