@@ -75,16 +75,20 @@ function fourthQuestion() {
 fourthQuestion();
 
 // Fifth question
-var userAnswerFuture = prompt('Am I currently attending Code Fellows to learn to be a JavaScript developer in the future?').toLowerCase();
-// console.log(userAnswerFuture);
-if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
-  // console.log('Correct!');
-  alert('Correct!');
-  score++;
-} else {
-  // console.log('Incorrect. It is true!');
-  alert('Incorrect! It is true!');
+
+function fifthQuestion() {
+  var userAnswerFuture = prompt('Am I currently attending Code Fellows to learn to be a JavaScript developer in the future?').toLowerCase();
+  // console.log(userAnswerFuture);
+  if (userAnswerFuture === 'yes' || userAnswerFuture === 'y') {
+    // console.log('Correct!');
+    alert('Correct!');
+    score++;
+  } else {
+    // console.log('Incorrect. It is true!');
+    alert('Incorrect! It is true!');
+  }
 }
+fifthQuestion();
 
 // creates random number between 1 and 100 for user to guess
 var myNumber = Math.floor((Math.random() * 100) + 1);
