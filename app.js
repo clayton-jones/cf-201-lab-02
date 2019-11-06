@@ -138,7 +138,6 @@ function seventhQuestion() {
   // testing if user's guess is equal to any of the games in the array
   while (userVideogameCorrect === false && numOfGuesses < 6) {
     // console.log(userVideogameGuess);
-    numOfGuesses++;
     for (var j = 0; j < myFavVideogames.length; j++) {
       if (userVideogameGuess === myFavVideogames[j]) {
         // console.log('games inside array: ', myFavVideogames[j]);
@@ -151,8 +150,9 @@ function seventhQuestion() {
     if (userVideogameCorrect === true) {
       break;
     } else {
-      userVideogameGuess = prompt('Guess again! ' + (6 - numOfGuesses) + ' remaining.').toLowerCase();
+      userVideogameGuess = prompt('Guess again! ' + (5 - numOfGuesses) + ' remaining.').toLowerCase();
     }
+    numOfGuesses++;
   }
   alert('These were all of the possible answers: ' + myFavVideogames);
 }
