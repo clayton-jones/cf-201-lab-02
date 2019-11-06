@@ -8,11 +8,11 @@ header {
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: rgb(201, 242, 245);
-  /* background-image: url("./acousticGuitar.jpg"); */
   background-position-y: 50%;
   width: 50%;
   margin: auto;
   border-radius: 10px;
+  box-shadow: 5px 5px;
 }
 
 h1 {
@@ -41,6 +41,7 @@ article {
   overflow: scroll;
   margin: auto;
   border-radius: 10px;
+  box-shadow: 5px 5px;
 }
 
 #myPicture {
@@ -86,18 +87,33 @@ footer {
   height: 40px;
 }
 
-#gitHubImg {
+nav > a {
   display: inline-block;
-  height: 80%;
-  vertical-align: bottom;
-}
-
-a {
+  margin: 10px;
+  padding: 5px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  box-shadow: 0px 5px #D6FCFF;
+  border-radius: 10px;
   text-decoration: none;
   font-size: 20px;
   vertical-align: middle;
 }
 
+a:visited {
+  color: #BCFBFF;
+}
+
 a:hover {
   color: #D6FCFF;
+  background-color: teal;
+}
+
+a:active {
+  box-shadow: 0px 2px #D6FCFF;
+  transform: translateY(2px);
+}
+
+nav {
+  display: inline-block;
 }
