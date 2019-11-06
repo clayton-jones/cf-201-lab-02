@@ -3,10 +3,13 @@ body {
 }
 
 header {
+  /* color: whitesmoke; */
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: rgb(201, 242, 245);
+  /* background-image: url("./acousticGuitar.jpg"); */
+  background-position-y: 50%;
   width: 50%;
   margin: auto;
   border-radius: 10px;
@@ -44,7 +47,7 @@ article {
   border-radius: 50%;
   display: block;
   margin: auto;
-  max-width: 110px;
+  max-width: 150px;
   padding-bottom: 10px;
   padding-top: 15px;
   transition: transform .4s;
