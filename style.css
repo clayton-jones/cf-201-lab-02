@@ -1,10 +1,15 @@
 body {
   background-color: #72AEB3;  
-
 }
+
 header {
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgb(201, 242, 245);
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
 }
 
 h1 {
@@ -24,9 +29,6 @@ h3 {
   font-size: 32px;
   padding-bottom: 20px;
   padding-top: 10px;
-
-  /* text-decoration: underline; */
-  /* text-decoration-color: rgb(117, 119, 226); */
 }
 
 article {
@@ -42,8 +44,9 @@ article {
   border-radius: 50%;
   display: block;
   margin: auto;
-  max-width: 100px;
+  max-width: 110px;
   padding-bottom: 10px;
+  padding-top: 15px;
   transition: transform .4s;
 }
 
@@ -60,12 +63,10 @@ p {
 
 ul, ol {
   text-align: left;
-  /* border: 1px solid red; */
   padding-bottom: 10px;
   width: 65%;
   margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 li {
@@ -80,10 +81,8 @@ footer {
   padding: 10px;
   text-align: center;
   height: 40px;
-  /* display: inline-block; */
-  /* border: 1px solid red; */
-  /* position: relative; */
 }
+
 #gitHubImg {
   display: inline-block;
   height: 80%;
@@ -94,8 +93,6 @@ a {
   text-decoration: none;
   font-size: 20px;
   vertical-align: middle;
-  /* padding-top: 50px; */
-  /* border: 2px solid red; */
 }
 
 a:hover {

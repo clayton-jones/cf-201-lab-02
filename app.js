@@ -5,7 +5,8 @@ var userName = prompt('What is your name?');
 alert('Hi, ' + userName + ', welcome to my awesome website. Impressed?');
 alert('Here is a little quiz to help you get to know me. Please answer yes/no or y/n.');
 
-var score = 0;
+var score = 0; // used to track correct answers
+
 
 // // First question
 
@@ -29,7 +30,7 @@ firstQuestion();
 function secondQuestion() {
   var userAnswerHobbies = prompt('Is one of my hobbies origami?').toLowerCase();
   // console.log(userAnswerHobbies);
-  
+
   if (userAnswerHobbies === 'no' || userAnswerHobbies === 'n') {
     // console.log('Correct!');
     alert('Correct!');
@@ -58,6 +59,7 @@ function thirdQuestion() {
 }
 thirdQuestion();
 
+
 // Fourth question
 
 function fourthQuestion() {
@@ -73,6 +75,7 @@ function fourthQuestion() {
   }
 }
 fourthQuestion();
+
 
 // Fifth question
 
@@ -90,17 +93,18 @@ function fifthQuestion() {
 }
 fifthQuestion();
 
+
 // Sixth question
 
 function sixthQuestion() {
   // creates random number between 1 and 100 for user to guess
   var myNumber = Math.floor((Math.random() * 100) + 1);
   // console.log(myNumber); // used to quickly test correct answers
-  
+
   // asks user to guess number (first guess)
   var userGuess = parseInt(prompt('I am thinking of a number between 1 and 100. What is it? You have four guesses.'));
   // console.log('userGuess number 1 to 100: ', userGuess);
-  
+
   // tells user if they got it right, and if not, to keep guessing
   for (var i = 0; i < 4; i++) {
     // console.log(userGuess);
@@ -121,6 +125,7 @@ function sixthQuestion() {
 }
 sixthQuestion();
 
+
 //Seventh Question
 
 function seventhQuestion() {
@@ -129,7 +134,7 @@ function seventhQuestion() {
   var numOfGuesses = 0;
   var userVideogameGuess = prompt('What is one of my favorite video games? You have 6 guesses.').toLowerCase();
   // console.log('User guess: ', userVideogameGuess);
-  
+
   // testing if user's guess is equal to any of the games in the array
   while (userVideogameCorrect === false && numOfGuesses < 6) {
     // console.log(userVideogameGuess);
@@ -152,12 +157,6 @@ function seventhQuestion() {
   alert('These were all of the possible answers: ' + myFavVideogames);
 }
 seventhQuestion();
-
-// else {
-//   userVideogameGuess = prompt('Guess again!' + (6 - numOfGuesses) + ' remaining.').toLowerCase;
-//   numOfGuesses++;
-// }
-
 
 
 // Farewell message
